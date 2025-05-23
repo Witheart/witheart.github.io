@@ -1,8 +1,14 @@
 ---
 permalink: /about/
-title: "About"
+title: "关于"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+我是吴思含，Witheart是我的英文名称。
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+一个嵌入式软件开发程序员（Linux & Android 适配与修改）。
+
+接触过 C/C++、Python、C#、Java、Kotlin，Solidworks 与 3D打印，PCB design&layout 以及电路焊接，STC8、STM32、ESP32、Raspberry Pi、RK3568/3588、i.MX6ULL，什么都想试试看但都不太精通（。
+
+头像是巧巧，我和对象一起养的OC。因为爱吃巧克力，所以起了这个名字。祈音是巧巧的 cp。
+
+Witheart 这个名字的由来和对象也有关，我很喜欢这个名字。

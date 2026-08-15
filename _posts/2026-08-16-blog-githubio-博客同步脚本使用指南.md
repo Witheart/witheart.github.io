@@ -90,7 +90,7 @@ F:\notes 是本地笔记库，witheart.top 是个人博客（GitHub 仓库 `With
 - 本地图片拷贝到 `assets/images/` 并重写路径。
 - 笔记之间的 `.md` 互链改写为目标文章的永久链接。
 - 含 `\(` 数学公式的自动加 `mathjax: true`。
-- 每篇自动加 `toc: true`（右侧目录）。
+- 每篇自动加 `toc: true`（右侧目录）；并在站点仓库 `_config.yml` 的 posts defaults 里配了 `toc_sticky: true`，右侧目录会随滚动固定在顶部（太长时目录内部自行滚动）。
 
 ---
 

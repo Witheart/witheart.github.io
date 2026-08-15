@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// ===== 自定义：全屏阅读时正文字号不要过大 =====
+// 主题默认：<768px=16px，768~1023px=18px，1024~1279px=20px，>=1280px=22px。
+// 这里把 1024px 及以上的字号封顶为 18px（和分屏/中等宽度一致），
+// 避免窗口最大化时正文 20~22px 过大。
+@media (min-width: 64em) {
+  html {
+    font-size: 18px;
+  }
+}

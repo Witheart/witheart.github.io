@@ -168,3 +168,90 @@ pre.highlight .clipboard-copy-button { color: #57606a; }
   .search__input { color: #eaeaea; background: #1e222a; border-color: #3f4552; }
 }
 
+
+// ===== 正文图片：边框 + 阴影 + 点击放大光标 =====
+.page__content img {
+  max-width: 100%;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  cursor: zoom-in;
+}
+[data-theme="dark"] .page__content img {
+  border-color: #3f4552;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+// ===== 图片灯箱 =====
+#image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+#image-lightbox.open {
+  display: flex;
+}
+#image-lightbox img {
+  max-width: 94vw;
+  max-height: 92vh;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+#image-lightbox .image-lightbox-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.6em;
+  line-height: 1;
+  cursor: pointer;
+}
+#image-lightbox .image-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+// ===== 返回顶部按钮 =====
+#back-to-top {
+  position: fixed;
+  right: 1.2em;
+  bottom: 1.2em;
+  z-index: 2500;
+  width: 2.6em;
+  height: 2.6em;
+  border: none;
+  border-radius: 50%;
+  background: rgba(37, 42, 52, 0.75);
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#back-to-top:hover {
+  background: rgba(37, 42, 52, 0.95);
+}
+[data-theme="dark"] #back-to-top {
+  background: rgba(234, 234, 234, 0.2);
+}
+[data-theme="dark"] #back-to-top:hover {
+  background: rgba(234, 234, 234, 0.35);
+}
+

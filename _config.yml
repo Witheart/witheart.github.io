@@ -29,6 +29,7 @@ og_image: /assets/images/og-cover.jpg
 og_image_alt: "Witheart的小窝"
 head_scripts:
   - /assets/js/dark-mode.js
+  - /assets/js/site-extras.js
 
 # Build settings
 markdown: kramdown

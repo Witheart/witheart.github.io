@@ -44,6 +44,11 @@ $max-width: 1600px;
 .highlight .o, .highlight .ow { color: #d73a49; }
 .highlight .nt { color: #22863a; }
 .highlight .err { color: #b31d28; background-color: #ffeef0; }
+.highlight .gh { color: #24292e; font-weight: 600; }
+.highlight .gd { color: #b31d28; background-color: #ffeef0; }
+.highlight .gi { color: #22863a; background-color: #f0fff4; }
+.highlight .gp { color: #6a737d; }
+.highlight .gu { color: #6a737d; }
 
 // ===== 深色模式 =====
 // 切换按钮：浅色显示月亮（点一下切深色），深色显示太阳（点一下切回浅色）
@@ -60,10 +65,10 @@ $max-width: 1600px;
 
 [data-theme="dark"] {
   color-scheme: dark;
-  background-color: #252a34;
+  background-color: #252a34 !important;
   color: #eaeaea;
 
-  body { background-color: #252a34; color: #eaeaea; }
+  body { background-color: #252a34 !important; color: #eaeaea; }
 
   // 主题切换按钮图标
   .theme__toggle .fa-sun { display: inline-block; }
@@ -78,9 +83,10 @@ $max-width: 1600px;
   a:visited { color: #699ea0; }
 
   // 顶部导航
-  .masthead { background-color: #252a34; border-bottom: 1px solid #3f4552; }
-  .site-title, .greedy-nav a, .masthead__menu-item a { color: #eaeaea; }
-  .site-title:hover, .greedy-nav a:hover { color: #bbbbbb; }
+  .masthead, .masthead__inner-wrap, .masthead__menu { background-color: #252a34 !important; }
+  .masthead { border-bottom: 1px solid #3f4552 !important; }
+  .site-title, .greedy-nav a, .masthead__menu-item a { color: #eaeaea !important; }
+  .site-title:hover, .greedy-nav a:hover { color: #bbbbbb !important; }
   .greedy-nav .visible-links a:before { background: #eaeaea; }
   .greedy-nav .hidden-links { background: #252a34; border: 1px solid #3f4552; }
   .navicon, .navicon:before, .navicon:after { background: #eaeaea; }
@@ -91,9 +97,25 @@ $max-width: 1600px;
   .page__meta a, .page__taxonomy a { color: #8cd2d5; }
 
   // 代码块 + 行内代码
-  pre, .highlight, div.highlighter-rouge, figure.highlight { background-color: #1e222a; color: #eaeaea; }
-  pre.highlight { border: 1px solid #3f4552; }
-  code { background-color: #1e222a; color: #eaeaea; }
+  pre, .highlight, div.highlighter-rouge, figure.highlight { background-color: #1e222a !important; color: #eaeaea !important; }
+  pre.highlight { border: 1px solid #3f4552 !important; }
+  code { background-color: #1e222a !important; color: #eaeaea !important; }
+  .page__content :not(pre) > code { background-color: #1e222a !important; color: #eaeaea !important; }
+
+  // 深色下语法高亮配色（覆盖浅色 token 颜色，避免深蓝/深色在深底上看不清）
+  .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #8b949e !important; font-style: italic; }
+  .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #ff7b72 !important; }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #a5d6ff !important; }
+  .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #79c0ff !important; }
+  .highlight .nf, .highlight .nc, .highlight .nn { color: #d2a8ff !important; }
+  .highlight .na { color: #79c0ff !important; }
+  .highlight .o, .highlight .ow { color: #ff7b72 !important; }
+  .highlight .nt { color: #7ee787 !important; }
+  .highlight .err { color: #f85149 !important; background-color: transparent !important; }
+  .highlight .gh { color: #c9d1d9 !important; font-weight: 600; }
+  .highlight .gd { color: #ffa198 !important; background-color: #490202 !important; }
+  .highlight .gi { color: #7ee787 !important; background-color: #0f5323 !important; }
+  .highlight .gp, .highlight .gu { color: #8b949e !important; }
 
   // 表格
   table, th, td { border-color: #3f4552; }

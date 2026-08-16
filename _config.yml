@@ -65,8 +65,8 @@ plugins:
 analytics:
   provider: "custom"
   baidu:
-    # 去 https://tongji.baidu.com 注册站点后，把下面的空值改成你的统计 ID（形如 abc123def456）
-    tracking_id: ""
+    # 百度统计 ID（tongji.baidu.com）
+    tracking_id: "04a728c130f539d0da6fe50644e52f39"
 
 author:
   name   : "吴思含(Witheart)"

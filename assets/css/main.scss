@@ -227,13 +227,16 @@ pre.highlight .clipboard-copy-button { color: #57606a; }
   right: 1.2em;
   bottom: 1.2em;
   z-index: 2500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 2.6em;
   height: 2.6em;
   border: none;
   border-radius: 50%;
   background: rgba(37, 42, 52, 0.75);
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1.2em;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;

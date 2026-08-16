@@ -7,7 +7,7 @@
     btn.id = 'back-to-top';
     btn.type = 'button';
     btn.setAttribute('aria-label', '返回顶部');
-    btn.textContent = '↑';
+    btn.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
     document.body.appendChild(btn);
 
     function toggleBackTop() {

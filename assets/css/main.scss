@@ -50,6 +50,9 @@ $max-width: 1600px;
 .highlight .gp { color: #6a737d; }
 .highlight .gu { color: #6a737d; }
 
+// 代码复制按钮：浅色模式下改成深灰（原 #ffffca 浅黄在浅灰代码底上看不清）
+pre.highlight .clipboard-copy-button { color: #57606a; }
+
 // ===== 深色模式 =====
 // 切换按钮：浅色显示月亮（点一下切深色），深色显示太阳（点一下切回浅色）
 .theme__toggle {
@@ -100,6 +103,7 @@ $max-width: 1600px;
   // 代码块 + 行内代码
   pre, .highlight, div.highlighter-rouge, figure.highlight { background-color: #1e222a !important; color: #eaeaea !important; }
   pre.highlight { border: 1px solid #3f4552 !important; }
+  pre.highlight .clipboard-copy-button { color: #c9d1d9 !important; }
   code { background-color: #1e222a !important; color: #eaeaea !important; }
   .page__content :not(pre) > code { background-color: #1e222a !important; color: #eaeaea !important; }
 

@@ -167,3 +167,41 @@ pre.highlight .clipboard-copy-button { color: #57606a; }
   .search-content, .search-content__inner-wrap { background: #252a34; }
   .search__input { color: #eaeaea; background: #1e222a; border-color: #3f4552; }
 }
+
+
+// ===== 分享按钮（中文平台配色） =====
+.btn--copy-link { background-color: #6a737d !important; color: #fff !important; }
+.btn--wechat { background-color: #07c160 !important; color: #fff !important; }
+.btn--qzone { background-color: #12b7f5 !important; color: #fff !important; }
+.btn--weibo { background-color: #e6162d !important; color: #fff !important; }
+.btn--csdn { background-color: #fc5531 !important; color: #fff !important; }
+
+// ===== 微信二维码弹窗 =====
+.wechat-qr-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+.wechat-qr-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5em 2em;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.wechat-qr-title {
+  margin: 0 0 0.8em;
+  color: #3d4144;
+  font-weight: 600;
+}
+.wechat-qr-box #wechat-qr-code {
+  margin: 0 auto 1em;
+  display: inline-block;
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}

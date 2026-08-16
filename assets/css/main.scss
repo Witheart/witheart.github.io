@@ -28,3 +28,115 @@ $max-width: 1600px;
     max-width: 1600px;
   }
 }
+
+
+// ===== 语法高亮主题（GitHub 风格） =====
+.highlight, pre.highlight {
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #6a737d; font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #d73a49; font-weight: 600; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #032f62; }
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #005cc5; }
+.highlight .nf, .highlight .nc, .highlight .nn { color: #6f42c1; }
+.highlight .na { color: #005cc5; }
+.highlight .o, .highlight .ow { color: #d73a49; }
+.highlight .nt { color: #22863a; }
+.highlight .err { color: #b31d28; background-color: #ffeef0; }
+
+// ===== 深色模式 =====
+// 切换按钮：浅色显示月亮（点一下切深色），深色显示太阳（点一下切回浅色）
+.theme__toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0 0.4em;
+
+  .fa-sun { display: none; }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: #252a34;
+  color: #eaeaea;
+
+  body { background-color: #252a34; color: #eaeaea; }
+
+  // 主题切换按钮图标
+  .theme__toggle .fa-sun { display: inline-block; }
+  .theme__toggle .fa-moon { display: none; }
+
+  // 标题
+  h1, h2, h3, h4, h5, h6, .page__title, .page__lead { color: #eaeaea; }
+
+  // 链接
+  a { color: #8cd2d5; }
+  a:hover, a:active { color: #a9dde0; }
+  a:visited { color: #699ea0; }
+
+  // 顶部导航
+  .masthead { background-color: #252a34; border-bottom: 1px solid #3f4552; }
+  .site-title, .greedy-nav a, .masthead__menu-item a { color: #eaeaea; }
+  .site-title:hover, .greedy-nav a:hover { color: #bbbbbb; }
+  .greedy-nav .visible-links a:before { background: #eaeaea; }
+  .greedy-nav .hidden-links { background: #252a34; border: 1px solid #3f4552; }
+  .navicon, .navicon:before, .navicon:after { background: #eaeaea; }
+  .search__toggle { color: #eaeaea; }
+
+  // 主体
+  .page, .page__content, #main, .initial-content { background-color: #252a34; }
+  .page__meta a, .page__taxonomy a { color: #8cd2d5; }
+
+  // 代码块 + 行内代码
+  pre, .highlight, div.highlighter-rouge, figure.highlight { background-color: #1e222a; color: #eaeaea; }
+  pre.highlight { border: 1px solid #3f4552; }
+  code { background-color: #1e222a; color: #eaeaea; }
+
+  // 表格
+  table, th, td { border-color: #3f4552; }
+  th { background-color: #1e222a; }
+
+  // 引用、分割线
+  blockquote { border-left-color: #00adb5; color: #eaeaea; }
+  hr { border-color: #3f4552; }
+
+  // 右侧目录 / 侧边栏
+  .sidebar, .sidebar__right, .toc, .nav__list { background-color: #252a34; }
+  .toc .nav__title, .sidebar .nav__title, .nav__list .nav__title { background: #1e222a; color: #eaeaea; }
+  .toc .toc__menu a, .nav__list .nav__items a { color: #8cd2d5; }
+  .toc .toc__menu a:hover, .nav__list .nav__items a:hover { color: #a9dde0; }
+
+  // 作者简介侧边栏
+  .author__avatar img { border: 1px solid #3f4552; }
+  .author__name, .author__bio { color: #eaeaea; }
+  .author__urls { background: #252a34; border: 1px solid #3f4552; }
+  .author__urls a, .author__urls .label { color: #eaeaea; }
+  .author__urls.social-icons i { color: #8cd2d5; }
+
+  // 面包屑
+  .breadcrumbs { color: #eaeaea; }
+  .breadcrumbs a { color: #8cd2d5; }
+
+  // 页脚
+  .page__footer { background-color: #1a1d24; color: #eaeaea; border-top: 1px solid #3f4552; }
+  .page__footer a, .page__footer .social-icons i { color: #8cd2d5; }
+
+  // 表单
+  input, textarea, select { background-color: #1e222a; color: #eaeaea; border-color: #3f4552; }
+
+  // 按钮
+  .btn, .btn--primary { background-color: #00adb5; color: #fff; }
+
+  // 分页 / 相关文章
+  .pagination a { color: #8cd2d5; }
+  .page__related { border-color: #3f4552; }
+  .archive__item-title a { color: #8cd2d5; }
+  .archive__item-excerpt, .archive__item-excerpt p, .archive__item-meta { color: #eaeaea; }
+
+  // 搜索弹窗
+  .search-content, .search-content__inner-wrap { background: #252a34; }
+  .search__input { color: #eaeaea; background: #1e222a; border-color: #3f4552; }
+}

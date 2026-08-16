@@ -22,6 +22,11 @@ twitter_username:
 github_username: Witheart
 minimal_mistakes_skin: default
 search: true
+enable_copy_code_button: true
+og_image: /assets/images/bio.jpg
+og_image_alt: "Witheart的小窝"
+head_scripts:
+  - /assets/js/dark-mode.js
 
 # Build settings
 markdown: kramdown
@@ -55,6 +60,13 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+# 访问统计（百度统计）
+analytics:
+  provider: "custom"
+  baidu:
+    # 去 https://tongji.baidu.com 注册站点后，把下面的空值改成你的统计 ID（形如 abc123def456）
+    tracking_id: ""
 
 author:
   name   : "吴思含(Witheart)"

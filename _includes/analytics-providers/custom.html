@@ -1,0 +1,15 @@
+{% comment %}
+  访问统计：百度统计（tongji.baidu.com）
+  在 _config.yml 的 analytics.baidu.tracking_id 里填入你的统计 ID 后生效。
+{% endcomment %}
+{% if site.analytics.baidu.tracking_id %}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?{{ site.analytics.baidu.tracking_id }}";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{% endif %}

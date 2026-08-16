@@ -82,8 +82,9 @@ $max-width: 1600px;
   a:hover, a:active { color: #a9dde0; }
   a:visited { color: #699ea0; }
 
-  // 顶部导航
+  // 顶部导航（.greedy-nav 才是真正带白色背景的元素，必须单独覆盖）
   .masthead, .masthead__inner-wrap, .masthead__menu { background-color: #252a34 !important; }
+  .greedy-nav { background: #252a34 !important; }
   .masthead { border-bottom: 1px solid #3f4552 !important; }
   .site-title, .greedy-nav a, .masthead__menu-item a { color: #eaeaea !important; }
   .site-title:hover, .greedy-nav a:hover { color: #bbbbbb !important; }

@@ -24,7 +24,7 @@ github_username: Witheart
 minimal_mistakes_skin: default
 search: true
 enable_copy_code_button: true
-og_image: /assets/images/bio.jpg
+og_image: /assets/images/og-cover.jpg
 og_image_alt: "Witheart的小窝"
 head_scripts:
   - /assets/js/dark-mode.js

@@ -5,6 +5,9 @@ search: false
 
 @charset "utf-8";
 
+// ===== 自定义：内容区最大宽度（默认 1280px，全屏时正文偏窄，改为 1600px）=====
+$max-width: 1600px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 

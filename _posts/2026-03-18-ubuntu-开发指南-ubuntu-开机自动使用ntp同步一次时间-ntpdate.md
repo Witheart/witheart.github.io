@@ -13,5 +13,5 @@ toc: true
 - 在开机脚本中加入
 ```bash
 # ntp======
-(sleep 20; echo "ntp时间同步" > /dev/kmsg; ntpdate ntp.aliyun.com 2>&1 | awk '{print "ntpdate: " $0}' > /dev/kmsg) &
+(sleep 20; echo "[witheart] ntp时间同步" > /dev/kmsg; ntpdate ntp.aliyun.com 2>&1 | awk '{print "[witheart] ntpdate: " $0}' > /dev/kmsg) &
 ```
